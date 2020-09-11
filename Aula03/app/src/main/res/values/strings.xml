@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula03</string>
+    <string name="name">Name</string>
+    <string name="she">She</string>
+    <string name="he">He</string>
+    <string name="not_renponse">Prefer not to anwser</string>
+    <string name="finish">finish</string>
+    <string name="pronoum_msg">What pronoum do you like to use ?</string>
+    <string name="done">done</string>
+    <string name="hello">hello</string>
+    <string name="msg">\"You\'ve chosen to use :  \"</string>
+    <string name="neutral">Neutral</string>
+</resources>
