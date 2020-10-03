@@ -2,6 +2,7 @@ package br.senac.navigationviewtest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,5 +30,36 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.addDrawerListener(it)
             it.syncState()
         }
+
+        navView.setNavigationItemSelectedListener {
+            drawerLayout.closeDrawers()
+
+            if (it.itemId == R.id.products) {
+                val fragment01 = Fragment01()
+                supportFragmentManager.beginTransaction().replace(R.id.fragContainer, fragment01).commit()
+
+                true
+
+            } else if (it.itemId == R.id.cart) {
+                val fragment02 = Fragment02()
+                supportFragmentManager.beginTransaction().replace(R.id.fragContainer, fragment02).commit()
+
+                true
+            }
+
+            false
+        }
+
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        toggle?.let {
+            return it.onOptionsItemSelected(item)
+        }
+
+
+        return super.onOptionsItemSelected(item)
+    }
+
+
 }

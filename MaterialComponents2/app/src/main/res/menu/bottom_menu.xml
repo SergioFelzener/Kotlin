@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/artists"
+        android:icon="@drawable/music"
+        android:title="Artists" />
+    <item
+        android:id="@+id/albuns"
+        android:icon="@drawable/album"
+        android:title="Albuns" />
+    <item
+        android:id="@+id/recents"
+        android:icon="@drawable/recent"
+        android:title="Recents" />
+</menu>

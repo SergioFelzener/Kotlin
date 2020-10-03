@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    tools:context=".Fragment01">
+    tools:context=".RecentsFrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/frag01"
+        android:id="@+id/recents"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Produtos"
+        android:layout_margin="16dp"
+        android:text="Recents Music Play"
         android:textAlignment="center"
-        android:textColor="#E91E63"
-        android:textSize="30sp"
+        android:textColor="#9C27B0"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
 </FrameLayout>
