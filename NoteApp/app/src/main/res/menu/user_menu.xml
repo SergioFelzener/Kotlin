@@ -7,4 +7,9 @@
         android:icon="@drawable/user"
         android:title="User Config"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/config"
+        android:icon="@drawable/settings"
+        android:title="config"
+        app:showAsAction="always" />
 </menu>
